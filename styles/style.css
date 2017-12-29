@@ -1,0 +1,155 @@
+body {
+    background-color: #EEE;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+
+#container{
+    background-color: white;
+    max-width: 1153px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+#header{
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+}
+
+.logo{
+    max-width: 100%;
+    height: auto;
+    width: auto;
+}
+
+#nav{
+    width: 183px;
+    float: left;
+    color: black;
+    background-color: #FFA500;
+    padding: 10px;
+}
+
+#nav ul{
+    list-style-type: none;
+    padding: 10px;
+}
+
+#nav li{
+    margin-bottom: 15px;
+    padding-top: 5px;
+    text-transform: uppercase;
+    position: relative;
+}
+
+#nav a{
+    text-decoration: none;
+    color: red;
+}
+
+#nav a:hover{
+    color: white;
+}
+
+#nav a::before{
+    content: '';
+    display: block;
+    height: 5px;
+    width: 0%;
+    background-color: red;
+    top: 10px;
+    transition: ease-in-out 250ms;
+}
+
+#nav a:hover::before{
+    width: 100%;
+}
+
+.dropdown{
+    position: fixed;
+}
+
+.dropdown-content{
+    display: none;
+ 
+}
+
+.dropdown:hover .dropdown-content{
+    display: block;
+    background-color: #FFA500;
+}
+
+#main{
+    width: auto;
+    color: #FFA500;
+    padding-left: 230px;
+}
+
+#content1{
+    padding: 20px;
+    width: auto;
+    height: auto;
+    background-color: black;
+}
+
+#content2{
+    padding: 100px;
+    text-align: center;
+}
+
+#content2 ul{
+    list-style-type: none;
+}
+
+img.playerimg{
+    max-height: 150px;
+    max-width: 150px;
+}
+
+a.hideInfo{
+    position: relative;
+    z-index: 20;
+    color: #000;
+    text-decoration: none;
+}
+
+a.hideInfo:hover{
+    z-index: 30;
+}
+
+a.hideInfo span.showOnHover{
+    display: none;
+}
+
+a.hideInfo:hover span.showOnHover{
+    display: block;
+    position: absolute;
+    font-size: 18px;
+    line-height: 25px;
+    top: 5px;
+    left: 20px;
+    width: auto;
+    padding: 10px;
+    border: 1px solid black;
+    background-color: #FFA500;
+    text-align: left;
+}
+
+#content3{
+
+}
+
+#nav .selected{
+    font-weight: bold;
+}
+
+#footer{
+    clear: both;
+    padding: 20px;
+    background-color: #343D48;
+    color: white;
+    text-align: right;
+}
+
